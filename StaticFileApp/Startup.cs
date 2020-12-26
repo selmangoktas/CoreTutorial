@@ -16,26 +16,25 @@ namespace StaticFileApp
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddControllersWithViews();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-            else
-            {
-                app.UseStatusCodePagesWithReExecute("/Error", "?statusCode={0}");
-            }
+            //hangi servisin hangi sýra ve ayar ile kullanýlacaðý
+
+            if (env.IsDevelopment()) app.UseDeveloperExceptionPage();
+            else app.UseStatusCodePagesWithReExecute("/Error", "?code={0}");//www.abc.com/Error?code=404   501 429
 
             app.UseRouting();
+            app.UseStaticFiles();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(name: "default", pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
         }
     }
 }
