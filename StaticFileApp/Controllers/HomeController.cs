@@ -12,5 +12,14 @@ namespace StaticFileApp.Controllers
         {
             return View();
         }
+        public IActionResult Detay()
+        {
+            return View();
+        }
+
+        public IActionResult Album()
+        {
+            return View();
+        }
     }
 }
