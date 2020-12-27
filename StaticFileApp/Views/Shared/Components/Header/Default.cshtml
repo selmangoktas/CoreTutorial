@@ -1,4 +1,11 @@
-﻿<header>
+﻿@{
+    string menuClass(string page)
+    {
+        return ViewBag.activePage == page ? "text-primary" : "text-white";
+    }
+}
+@model IEnumerable<About>
+<header>
     <div class="collapse bg-dark" id="navbarHeader">
         <div class="container">
             <div class="row">
@@ -7,11 +14,19 @@
                     <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
                 </div>
                 <div class="col-sm-4 offset-md-1 py-4">
-                    <h4 class="text-white">Contact</h4>
+                    <h4 class="text-white">Hızlı Erişim</h4>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Follow on Twitter</a></li>
-                        <li><a href="#" class="text-white">Like on Facebook</a></li>
-                        <li><a href="#" class="text-white">Email me</a></li>
+                        <li><a class="@menuClass("home")" asp-controller="Home" asp-action="Index">Ana Sayfa</a></li>
+                        <li>
+                            <a class="@menuClass("about")" asp-controller="About" asp-action="Index">Hakkımızda</a>
+                            <ul>
+                                @foreach (About about in Model)
+                                {
+                                    <li><a href="@about.Link">@about.Name</a></li>
+                                }
+                            </ul>
+                        </li>
+                        <li><a class="@menuClass("contact")" asp-controller="Contact" asp-action="Index">İletişim</a></li>
                     </ul>
                 </div>
             </div>

@@ -1,4 +1,17 @@
-﻿@{ 
-    Layout = null;
-}
-<h1> Detay Sayfası </h1>
+﻿@*@{
+        Layout = "~/views/shared/ozelLayout.cshtml";
+    }*@
+@model News
+<main>
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light">@Model.Title.ToUpper() HABERİNİN DETAY SAYFASINA HOŞ GELDİNİZ</h1>
+                <p class="lead text-muted">@Model.Description</p>
+                <p>
+                   <img src="@Model.Picture" alt="@Model.Title" />
+                </p>
+            </div>
+        </div>
+    </section>
+</main>

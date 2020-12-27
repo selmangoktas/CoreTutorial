@@ -12,8 +12,22 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#nullable restore
+#line 1 "D:\calismalar\CoreTutorial\StaticFileApp\Views\_ViewImports.cshtml"
+using StaticFileApp.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "D:\calismalar\CoreTutorial\StaticFileApp\Views\_ViewImports.cshtml"
+using StaticFileApp.Tools;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ac6f0381a2b5c815757864b277e973d0d640fad0", @"/Views/Home/Album.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"10dc16a84f86d95564f98780dd86921619a67f88", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"590316fb0112288490161904158c8a780abf62dd", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Album : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

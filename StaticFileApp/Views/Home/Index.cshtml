@@ -1,35 +1,40 @@
-﻿@{
-    ViewData["Title"] = "Index";
-}
-<h1>Index</h1>
-<img src="~/images/f3.jpg" />
-
-
-
-
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-    Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+﻿@model IEnumerable<News>
+<main>
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light">WEB SAYFAMIZA HOŞ GELDİNİZ</h1>
+                <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+                <p>
+                    <a href="#" class="btn btn-primary my-2">Main call to action</a>
+                    <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+                </p>
             </div>
-            <div class="modal-body">
-                ...
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+    </section>
+    <div class="album py-5 bg-light">
+        <div class="container">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                @foreach (News news in Model)
+                {
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="@news.Picture" alt="@news.Title" height="200"/>
+                            <div class="card-body">
+                                <h5 style="color:darkblue">@news.Title</h5>
+                                <p class="card-text" style="height:70px;overflow:hidden">@news.Description</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a asp-controller="Home" asp-action="Detay" asp-route-title="@GeneralTool.UrlConvert(news.Title)" asp-route-id="@news.ID" class="btn btn-sm btn-outline-secondary">Detaylı Bilgi</a>
+                                    </div>
+                                    <small class="text-muted">@news.RecDate.ToString("dd MMMM yyyy")</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
             </div>
         </div>
     </div>
-</div>
+</main>

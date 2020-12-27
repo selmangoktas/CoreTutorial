@@ -5,8 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
-    <Folder Include="wwwroot\contents\" />
+    <None Include="Views\About\Index.cshtml" />
+    <None Include="Views\Contact\Index.cshtml" />
+    <None Include="Views\Home\Album.cshtml" />
+    <None Include="Views\Home\Detay.cshtml" />
+    <None Include="Views\Home\Index.cshtml" />
+    <None Include="Views\Shared\Components\Footer\Default.cshtml" />
+    <None Include="Views\Shared\Components\Header\Default.cshtml" />
+    <None Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
 
   <ItemGroup>

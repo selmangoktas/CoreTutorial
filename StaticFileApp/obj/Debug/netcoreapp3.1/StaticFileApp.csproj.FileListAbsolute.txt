@@ -97,8 +97,6 @@ D:\calismalar\CoreTutorial\StaticFileApp\obj\Debug\netcoreapp3.1\StaticFileApp.R
 D:\calismalar\CoreTutorial\StaticFileApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Album.cshtml.g.cs
 D:\calismalar\CoreTutorial\StaticFileApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Detay.cshtml.g.cs
 D:\calismalar\CoreTutorial\StaticFileApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-D:\calismalar\CoreTutorial\StaticFileApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Footer.cshtml.g.cs
-D:\calismalar\CoreTutorial\StaticFileApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Header.cshtml.g.cs
 D:\calismalar\CoreTutorial\StaticFileApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 D:\calismalar\CoreTutorial\StaticFileApp\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
 D:\calismalar\CoreTutorial\StaticFileApp\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
@@ -109,3 +107,8 @@ D:\calismalar\CoreTutorial\StaticFileApp\obj\Debug\netcoreapp3.1\StaticFileApp.c
 D:\calismalar\CoreTutorial\StaticFileApp\obj\Debug\netcoreapp3.1\StaticFileApp.dll
 D:\calismalar\CoreTutorial\StaticFileApp\obj\Debug\netcoreapp3.1\StaticFileApp.pdb
 D:\calismalar\CoreTutorial\StaticFileApp\obj\Debug\netcoreapp3.1\StaticFileApp.genruntimeconfig.cache
+D:\calismalar\CoreTutorial\StaticFileApp\obj\Debug\netcoreapp3.1\Razor\Views\About\Index.cshtml.g.cs
+D:\calismalar\CoreTutorial\StaticFileApp\obj\Debug\netcoreapp3.1\Razor\Views\Contact\Index.cshtml.g.cs
+D:\calismalar\CoreTutorial\StaticFileApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Header\Default.cshtml.g.cs
+D:\calismalar\CoreTutorial\StaticFileApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Footer\Default.cshtml.g.cs
+D:\calismalar\CoreTutorial\StaticFileApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\ozelLayout.cshtml.g.cs
